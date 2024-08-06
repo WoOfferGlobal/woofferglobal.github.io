@@ -48,10 +48,11 @@ glide.on("run.before", () => {
 glide.mount();
 
 // 成功案例 js
-const isotope = new Isotope(".cases", {
-  layoutMode: "fitRows",
-  itemSelector: ".case-item",
-});
+// const isotope = new Isotope(".cases", {
+//   layoutMode: "fitRows",
+//   itemSelector: ".case-item",
+// });
+
 
 const filterBtns = document.querySelector(".filter-btns");
 
@@ -63,8 +64,15 @@ filterBtns.addEventListener("click", (e) => {
       .querySelectorAll(".filter-btn.active")
       .forEach((btn) => btn.classList.remove("active"));
     target.classList.add("active");
-
-    isotope.arrange({ filter: filterOption });
+    
+  document.querySelectorAll(".case-item").forEach((el) => {
+    el.classList.add("hide");
+  });
+  document.querySelectorAll(filterOption).forEach((el) => {
+    el.classList.remove("hide");
+  });
+  
+    // isotope.arrange({ filter: filterOption });
   }
 });
 
