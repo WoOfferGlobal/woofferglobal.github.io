@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./static/libs/scrollReveal/scrollreveal.min.js"></script>
+    <!-- 引入font-awesome依赖 -->
+    <link
+      href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/libs/glide/glide.core.min.css" />
+    <link rel="stylesheet" href="./static/libs/glide/glide.theme.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>WoOffer Global - 一站式高端本硕博留学</title>
+  </head>
+  <body>
+    <!-- 网页头部 -->
+    <header>
+      <div class="logo">WoOffer Global</div>
+      <nav>
+        <a href="#home">首页</a>
+        <a href="#about-us">关于我们</a>
+        <a href="#showcases">OFFER展示</a>
+        <a href="#service">服务优势</a>
+        <a href="#team-intro">团队介绍</a>
+        <a href="#company-activities">公司动态</a>
+        <a href="#"><i class="fas fa-search"></i></a> 
+      </nav>
+      <div class="burger">
+        <div class="burger-line1"></div>
+        <div class="burger-line2"></div>
+        <div class="burger-line3"></div>
+      </div>
+    </header>
+    <div id="home" class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+          <!-- 轮播图一 -->
+          <div class="glide__slide">
+            <div class="slide-caption left">
+              <h1>WoOffer Global</h1>
+              <h3>一站式高端本硕博留学</h3>
+              <button class="explore-btn">探索更多</button>
+            </div>
+            <div class="backdrop"></div>
+            <img src="./static/images/people-in-couch-1024248.jpg" />
+          </div>
+          <div class="glide__slide">
+            <div class="slide-caption left">
+              <h1>WoOffer Global</h1>
+              <h3>一站式高端本硕博留学</h3>
+            
+              <button class="explore-btn">探索更多</button>
+            </div>
+            <div class="backdrop"></div>
+            <video
+              src="./static/videos/working-man.mp4"
+              muted
+              autoplay
+              loop
+            ></video>
+          </div>
+        </div>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <i class="fa fa-angle-left"></i>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <i class="fa fa-angle-right"></i>
+          </button>
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <section id="about-us" class="about-us">
+        <h2 class="title1">关于我们</h2>
+        <div class="intro">
+          <p>
+            WoOffer Global，已累计帮助1000+同学上岸。
+          </p>
+        </div>
+        <div class="features">
+          <div class="feature">
+            <i class="fas fa-lightbulb"></i>
+            <h4 class="feature-title">公司介绍</h4>
+            <p class="feature-content">
+              WoOffer Global是一家全球领先的留学服务机构，致力于为学生提供全方位的海外升学咨询与申请服务。
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-chart-line"></i>
+            <h4 class="feature-title">团队概况</h4>
+            <p class="feature-content">
+              我们的专业团队拥有丰富的国际教育经验，覆盖英国、欧洲、美国、加拿大、澳洲、新西兰、香港、新加坡、日本、韩国等全球热门留学目的地。
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-shopping-cart"></i>
+            <h4 class="feature-title">学术老师</h4>
+            <p class="feature-content">
+              合作超500+全球各地区的博士老师，分别负责背景提升、文书写作、学术写作、简历制作等各学术板块
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-desktop"></i>
+            <h4 class="feature-title">服务范围</h4>
+            <p class="feature-content">
+              背景提升、学业辅导、Top Up、本科预科、本科、硕士预科、硕士、博士、奖学金申请等。
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-tachometer-alt"></i>
+            <h4 class="feature-title">合作院校</h4>
+            <p class="feature-content">
+              我们与全球众多顶尖院校建立了深厚的合作关系，为学生提供广泛的升学选择和优质的教育资源。
+            </p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-server"></i>
+            <h4 class="feature-title">服务宗旨</h4>
+            <p class="feature-content">
+              《因为淋过雨，所以想给你撑把伞》
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="showcases" class="showcases section-bg">
+        <h2 class="title1">OFFER 展示（部分）</h2>
+        <div class="filter-btns">
+          <button class="filter-btn active" data-filter=".bacholer">本科</button>
+          <button class="filter-btn" data-filter=".master">硕士</button>
+          <button class="filter-btn" data-filter=".phd">博士</button>
+          <button class="filter-btn" data-filter=".intern">实习</button>
+        </div>
+        <div class="cases">
+          <div class="case-item bacholer">
+            <img src="./static/images/phd1.jpg" alt="">
+          </div>
+          <div class="case-item bacholer">
+            <img src="./static/images/phd1.jpg" alt="">
+          </div>
+          <div class="case-item bacholer">
+            <img src="./static/images/phd1.jpg" alt="">
+          </div>
+          <div class="case-item master">
+            <img src="./static/images/phd1.jpg" alt="">
+          </div>
+          <div class="case-item master">
+            <img src="./static/images/phd1.jpg" alt="">
+          </div>
+          <div class="case-item master">
+            <img src="./static/images/phd1.jpg" alt="">
+          </div>
+          <div class="case-item phd">
+            <img src="./static/images/phd1.jpg" alt="">
+          </div>
+          <div class="case-item phd">
+            <img src="./static/images/phd1.jpg" alt="">
+          </div>
+          <div class="case-item phd">
+            <img src="./static/images/phd1.jpg" alt="">
+          </div>
+        </div>
+      </section>
+      <section id="service" class="service">
+        <h2 class="title1">核心服务优势</h2>
+        <p class="intro">
+          网络综合公司，提供包括网络基础服务（比如域名，主机，邮箱）和网络增值服务（如网站建设和推广，网站优化）等业务
+        </p>
+        <div class="services">
+          <div class="service-item">
+            <i class="fas fa-comments"></i>
+            <h4 class="service-title">名校硕博海归团队直接沟通指导</h4>
+            <p class="service-content">
+              95%博士核心团队博士核心成员，超强专业阵容为您服务，保 证博士申请的所有核心环节均由经过筛选、培训的博士在读以上的导师负责，确保服务的专业性和质量。
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-sign-in-alt"></i>
+            <h4 class="service-title">4+2+1 V 1 全流程保驾护航</h4>
+            <p class="service-content">
+              安排3-4个同专业博士老师负责申请的各个环节。例如，选校定位、文书写作、RP研究计划写作（博士）奖学金申请等。确保每个服务环节的专业性，完整性和及时性。此外，2位博士创始人进行日常答疑，解决各种疑难杂症，保证申请万无一失
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-file-signature    "></i>
+            <h4 class="service-title">英国母语文书老师领衔高质量文书团队</h4>
+            <p class="service-content">
+              文书由华裔老师负责润色，三语者，母语英语，可普通话沟通。文书包含简历，个人陈述，推荐信等，每个部分均可由负责老师直接沟通指导学生，内容挖掘，头脑风暴。客户可以随时查看文书材料，超过90%的文书客户一次通过而且非常满意，少部分经过1-2次小修改后客户非常满意。
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-user"></i>
+            <h4 class="service-title">申请流程透明共享邮箱账密</h4>
+            <p class="service-content">
+              我们承诺申请的流程全部公开透明，学生均可实时查看邮件，老 师和学生同时监督申请进度，双重保险。
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h4 class="service-title">保姆式陪伴服务</h4>
+            <p class="service-content">
+              绝大部分留学机构没有陪读服务。我们所有VIP服务都会为提前规划的同学们专门配一位同专业在读博士老师进行保姆式陪读服务，包括答疑解惑、方向咨询、实时规划、课业咨询、学术咨询等。
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-user-check"></i>
+            <h4 class="service-title">专业面试辅导</h4>
+            <p class="service-content">
+              绝大部分留学机构没有面试辅导，最多给学生搜集题目，WoOffer所有VIP服务均包含面试辅导部分，会有专业老师1V1指导学生如何回答面试问题，传授解题思路，面试技巧，模拟辅导，确保学生面试无忧
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="team-intro" class="team-intro section-bg">
+        <h2 class="title1">团队介绍</h2>
+        <div class="team-members">
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/john.jpg" alt="">
+            </div>
+            <h4 class="name">John</h4>
+            <p class="position">WoOffer创始人</p>
+            <p class="position">KCL博士 & 教育领域创作者</p>
+            <p class="position">CSC全额奖学金获得者</p>
+            <p class="position">UKRI Funding获得者</p>
+            <!-- <ul class="social-links">
+              <li><a href="http://www.baidu"><i class="fab fa-weixin"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-weibo"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-github"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-linkedin"></i></a></li>
+            </ul> -->
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/eason.jpg" alt="">
+            </div>
+            <h4 class="name">Eason</h4>
+            <p class="position">WoOffer 联合创始人</p>
+            <p class="position">剑桥博士</p>
+            <p class="position">CSC奖学金获得者</p>
+            <p class="position">担任多个会议和期刊审稿人</p>
+            <!-- <ul class="social-links">
+              <li><a href="http://www.baidu"><i class="fab fa-weixin"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-weibo"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-github"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-linkedin"></i></a></li>
+            </ul> -->
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/hwan.jpg" alt="">
+            </div>
+            <h4 class="name">Hwan</h4>
+            <p class="position">WoOffer 联合创始人</p>
+            <p class="position">& 华裔母语文书主管</p>
+            <p class="position">RCA & KCL博士</p>
+            <p class="position">ESRC Fellowship</p>
+            <!-- <ul class="social-links">
+              <li><a href="http://www.baidu"><i class="fab fa-weixin"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-weibo"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-github"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-linkedin"></i></a></li>
+            </ul> -->
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/jimmy.jpg" alt="">
+            </div>
+            <h4 class="name">Jimmy</h4>
+            <p class="position">WoOffer 联合创始人</p>
+            <p class="position">& 全球学术负责人</p>
+            <p class="position">剑桥大学博士&博后</p>
+            <p class="position">担任多个会议期刊审稿人</p>
+            <!-- <ul class="social-links">
+              <li><a href="http://www.baidu"><i class="fab fa-weixin"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-weibo"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-github"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-linkedin"></i></a></li>
+            </ul> -->
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/Zora.jpg" alt="">
+            </div>
+            <h4 class="name">Zora</h4>
+            <p class="position">WoOffer 首席文书老师</p>
+            <p class="position">纽约大学博士&博后</p>
+            <p class="position">多篇顶刊学术论文发表</p>
+            <!-- <ul class="social-links">
+              <li><a href="http://www.baidu"><i class="fab fa-weixin"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-weibo"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-github"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-linkedin"></i></a></li>
+            </ul> -->
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/anna.jpg" alt="">
+            </div>
+            <h4 class="name">Anna</h4>
+            <p class="position">WoOffer 后端服务主管</p>
+            <p class="position">新国立大学博士</p>
+            <p class="position">四所全球顶尖商学院全奖录取</p>
+            <p class="position">李光耀奖学金获得者</p>
+            <!-- <ul class="social-links">
+              <li><a href="http://www.baidu"><i class="fab fa-weixin"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-weibo"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-github"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-linkedin"></i></a></li>
+            </ul> -->
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./static/images/shirley.jpg" alt="">
+            </div>
+            <h4 class="name">Shirley</h4> 
+            <p class="position">WoOffer 首席规划师</p>
+            <p class="position">墨尔本大学博士</p>
+            <p class="position">CSC奖学金获得者</p>
+            <p class="position">UIPA奖学金获得者</p>
+            <!-- <ul class="social-links">
+              <li><a href="http://www.baidu"><i class="fab fa-weixin"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-weibo"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-github"></i></a></li>
+              <li><a href="http://www.baidu"><i class="fab fa-linkedin"></i></a></li>
+            </ul> -->
+          </div>
+        </div>
+      </section>
+      <section class="data-section">
+        <div class="data-piece">
+          <i class="fas fa-code"></i>
+            <div class="num">200+</div>
+            <div class="data-desc">本科录取</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-code"></i>
+            <div class="num">600+</div>
+            <div class="data-desc">硕士录取</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-code"></i>
+            <div class="num">400+</div>
+            <div class="data-desc">博士录取</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-code"></i>
+            <div class="num">100+</div>
+            <div class="data-desc">预科录取</div>
+        </div>
+      </section>
+      <section id="company-activities" class="company-activities">
+        <h2 class="title1">公司动态</h2>
+        <p class="intro">关注公司动态，获取一手信息</p>
+        <div class="activities">
+          <div class="activity">
+            <div class="act-image-wrapper">
+              <img src="./static/images/activity01-image.jpg" alt="">
+            </div>
+            <div class="meta">
+              <p class="data-published">
+                <i class="far fa-calendar"></i>
+                2020年4月22日
+              </p>
+              <p class="comments">
+                <i class="far fa-comments"></i>
+                33
+                <span>条评论</span>
+              </p>
+            </div>
+            <h2 class="act-title">提供互联网接入的ISP公司</h2>
+            <article>
+              ISP证，全称为互联网接入服务业务(ISP)，是第二类增值电信业务。根据国务院相关规定，从事增值电信业务，就需要办理相应的增值电信业务许可证，增值电信业务经营许可证是按照国务院《中华人民共和国电信条例》，由工信部、各省市通信管理局对从事增值电信业务的企业颁发的从业证明，否则就是无证经营。被查需要负法律责任。
+            </article>
+            <button class="read-more-btn">阅读更多</button>
+          </div>
+          <div class="activity">
+            <div class="act-image-wrapper">
+              <img src="./static/images/red-suspension-bridge-3493772.jpg" alt="">
+            </div>
+            <div class="meta">
+              <p class="data-published">
+                <i class="far fa-calendar"></i>
+                2020年4月22日
+              </p>
+              <p class="comments">
+                <i class="far fa-comments"></i>
+                33
+                <span>条评论</span>
+              </p>
+            </div>
+            <h2 class="act-title">提供互联网接入的ISP公司</h2>
+            <article>
+              ISP证，全称为互联网接入服务业务(ISP)，是第二类增值电信业务。根据国务院相关规定，从事增值电信业务，就需要办理相应的增值电信业务许可证，增值电信业务经营许可证是按照国务院《中华人民共和国电信条例》，由工信部、各省市通信管理局对从事增值电信业务的企业颁发的从业证明，否则就是无证经营。被查需要负法律责任。
+            </article>
+            <button class="read-more-btn">阅读更多</button>
+          </div>
+          <div class="activity">
+            <div class="act-image-wrapper">
+              <img src="./static/images/watercrafts-on-river-3464632.jpg" alt="">
+            </div>
+            <div class="meta">
+              <p class="data-published">
+                <i class="far fa-calendar"></i>
+                2020年4月22日
+              </p>
+              <p class="comments">
+                <i class="far fa-comments"></i>
+                33
+                <span>条评论</span>
+              </p>
+            </div>
+            <h2 class="act-title">提供互联网接入的ISP公司</h2>
+            <article>
+              ISP证，全称为互联网接入服务业务(ISP)，是第二类增值电信业务。根据国务院相关规定，从事增值电信业务，就需要办理相应的增值电信业务许可证，增值电信业务经营许可证是按照国务院《中华人民共和国电信条例》，由工信部、各省市通信管理局对从事增值电信业务的企业颁发的从业证明，否则就是无证经营。被查需要负法律责任。
+            </article>
+            <button class="read-more-btn">阅读更多</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-menus">
+        <div class="contact-us">
+          <p class="menu-title">联系我们</p>
+          <p>地址：</p>
+          <p>电话</p>
+          <p>传真</p>
+          <p>电子邮件：admin@abc.com</p>
+        </div>
+        <div class="service-menu footer-menu">
+          <p class="menu-title">服务概览</p>
+          <ul class="menu-items">
+            <li><a href="#">网站建设</a></li>
+            <li><a href="#">域名购买</a></li>
+            <li><a href="#">网页设计</a></li>
+            <li><a href="#">移动应用</a></li>
+          </ul>
+        </div>
+        <div class="service-menu footer-menu">
+          <p class="menu-title">成功案例</p>
+          <ul class="menu-items">
+            <li><a href="#">桌面网站</a></li>
+            <li><a href="#">移动网站</a></li>
+            <li><a href="#">科研网站</a></li>
+            <li><a href="#">软件应用</a></li>
+          </ul>
+        </div>
+        <div class="service-menu footer-menu">
+          <p class="menu-title">公司动态</p>
+          <ul class="menu-items">
+            <li><a href="#">信息公开</a></li>
+            <li><a href="#">最近新闻</a></li>
+            <li><a href="#">最新博客</a></li>
+          </ul>
+        </div>
+        <div class="service-menu footer-menu">
+          <p class="menu-title">帮助与支持</p>
+          <ul class="menu-items">
+            <li><a href="#">帮助中心</a></li>
+            <li><a href="#">联系客服</a></li>
+            <li><a href="#">文档资源</a></li>
+          </ul>
+        </div>
+        <!-- <p class="icp-info">湘ICP备19026630号-1</p> -->
+        <p class="rights">&copy; 2019 湖北江夏区汉书申信息咨询工作室</p>
+        <div class="scroll-to-top">
+          <a href="#"><i class="fas fa-chevron-up"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- 引入JS文件 --> 
+    <script src="./static/libs/anime/anime.min.js"></script>
+    <script src="./static/libs/glide/glide.min.js"></script>
+    <script src="./static/libs/isotope/isotope.pkgd.min.js"></script>
+    <script src="./static/libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
